@@ -14,6 +14,9 @@ class Slingshot{
     fly(){
         this.sling.bodyA =null;
     }
+    attach(polygon){
+        this.sling.bodyA=polygon
+    }
     display(){
         if(this.sling.bodyA){
         var pointA = this.sling.bodyA.position;
